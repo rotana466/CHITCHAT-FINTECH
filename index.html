@@ -1,23 +1,40 @@
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitchat Fintech</title>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBzK4tt4gI-B8GAJVXqKpgQD6PTdtuxkbo",
-    authDomain: "chitchat-992d6.firebaseapp.com",
-    projectId: "chitchat-992d6",
-    storageBucket: "chitchat-992d6.firebasestorage.app",
-    messagingSenderId: "132736236077",
-    appId: "1:132736236077:web:d021488cc88724970ed6a4",
-    measurementId: "G-FTTH2WE910"
-  };
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBzK4tt4gI-B8GAJVXqKpgQD6PTdtuxkbo",
+        authDomain: "chitchat-992d6.firebaseapp.com",
+        projectId: "chitchat-992d6",
+        storageBucket: "chitchat-992d6.firebasestorage.app",
+        messagingSenderId: "132736236077",
+        appId: "1:132736236077:web:d021488cc88724970ed6a4",
+        measurementId: "G-FTTH2WE910"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      
+      console.log("Firebase initialized successfully!");
+    </script>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div style="text-align: center; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h1 style="color: #333; margin-bottom: 10px;">Welcome to CHITCHAT-FINTECH</h1>
+        <p style="color: #666; font-size: 1.1rem;">Your web application is successfully connected to Firebase!</p>
+        <div style="margin-top: 20px; display: inline-block; width: 12px; height: 12px; background-color: #2ec4b6; border-radius: 50%; animation: pulse 1.5s infinite;"></div>
+        <span style="color: #2ec4b6; font-weight: bold; margin-left: 5px;">System Active</span>
+    </div>
+
+</body>
+</html>
